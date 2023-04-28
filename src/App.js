@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import qrCodeImage from "./assets/image-qr-code.png";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid className="main-container">
+      <Card>
+        <Card.Img variant="top" src={qrCodeImage} className='p-5' />
+        <Card.Body>
+          <Card.Title>Improve your front-end skills by building projects</Card.Title>
+          <Card.Text>
+            Scan the QR code to visit Frontend Mentor and take your coding skills to
+            the next level
+          </Card.Text>
+        </Card.Body>
+      </Card>
+
+
+      <div className="attribution">
+        <span>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
+        </span>
+        <span>
+          Coded by <a href="https://fintatum.com" target="_blank">Fin Tatum</a>
+        </span>
+        
+      </div>
+    </Container>
   );
 }
 
