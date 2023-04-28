@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 import qrCodeImage from "./assets/image-qr-code.png";
 import './App.css';
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <Container fluid className="main-container">
       <Card>
-        <Card.Img variant="top" src={qrCodeImage} className='p-5' />
+        <Card.Img variant="top" src={qrCodeImage} />
         <Card.Body>
           <Card.Title>Improve your front-end skills by building projects</Card.Title>
           <Card.Text>
